@@ -6,7 +6,8 @@ app.use(cors())
 
 
 if (process.env.NODE_ENV === "production") {
-    console.log("production")
+    console.log("production1")
+    console.log("production2")
 }
 
 app.get('/', (req, res) => {
