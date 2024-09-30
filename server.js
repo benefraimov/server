@@ -4,6 +4,11 @@ const cors = require('cors');
 
 app.use(cors())
 
+
+if (process.env.NODE_ENV === "production") {
+    console.log("production")
+}
+
 app.get('/', (req, res) => {
     res.json({ name: "Hello world" });
 })
